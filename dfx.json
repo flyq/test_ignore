@@ -5,6 +5,11 @@
         },
         "test2": {
             "main": "src/test.mo"
+        },
+        "test3": {
+            "type": "custom",
+            "candid": "./test.did",
+            "wasm": "target/wasm32-unknown-unknown/release/opt.wasm"
         }
     }
 }
