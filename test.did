@@ -1,1 +1,1 @@
-service : (principal) -> {}
+service : (principal) -> { test : () -> (nat64) query }

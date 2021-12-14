@@ -9,5 +9,4 @@ edition = "2018"
 ic-cdk-macros = "0.3.1"
 candid = "0.7.4"
 ic-cdk = "0.3.1"
-serde_bytes = "0.11.5"
-serde = "1"
+tokio = { version = "1.14.0", features = ["rt-multi-thread"] }
