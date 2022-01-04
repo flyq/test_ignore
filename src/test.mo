@@ -15,8 +15,10 @@ actor {
     public func call(_a: Text, to: Principal): async Bool {
         let handle: TestActor = actor(Principal.toText(to));
         // ignore handle.set(_a); works
-        let _ = handle.set(_a);
-        true
+        // let _ = handle.set(_a); works
+        // true
+        let result = await handle.set(_a);
+        result
     };
 
     public query func get(): async Text {
